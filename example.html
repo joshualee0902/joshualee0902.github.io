@@ -1,4 +1,18 @@
-<iframe frameborder="0" scrolling="no"
-     width="640" height="480"
-     src="https://drive.google.com/drive/u/0/folders/1LZJDP5UuHPM93mjI8VwUim_Wcuhmo6H2/preview">
-</iframe>
+<div id="adobe-dc-view" style="width: 800px;"></div>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script type="text/javascript">
+    document.addEventListener("adobe_dc_view_sdk.ready", function () {
+        var adobeDCView = new AdobeDC.View({
+            clientId: "89935b2b41204fc49a31f72f430807d3",
+            divId: "adobe-dc-view"
+        });
+        adobeDCView.previewFile({
+            content: { location: { url: "https://drive.google.com/file/d/1RgXJe5nJFyAo1YK-k3nvBvEy4MiDjLKh/view?usp=sharing" } },
+            metaData: { fileName: "presentation.pdf" }
+        }, {
+            embedMode: "IN_LINE",
+            showDownloadPDF: false,
+            showPrintPDF: false
+        });
+    });
+</script>
