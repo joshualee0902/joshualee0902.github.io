@@ -215,7 +215,7 @@ jQuery(document).ready(function($) {
 
 	var siteCountDown = function() {
 
-		$('#date-countdown').countdown('2020/10/10 23:07:00', function(event) {
+		$('#date-countdown').countdown('2020/09/04 19:30:00', function(event) {
 		  var $this = $(this).html(event.strftime(''
 		    + '<span class="countdown-block"><span class="label">%w</span> weeks </span>'
 		    + '<span class="countdown-block"><span class="label">%d</span> days </span>'
